@@ -23,12 +23,16 @@ var SearchContainer = React.createClass({
 		});
 
 		if (this.props.routeParams.artistSearch) {
+			
 			this.context.router.push({
 				pathname: '/artist',
 				query: {
 					artist: this.props.routeParams.artist
 				}
 			})
+		} else {
+			console.log(this.context);
+			this.context.router.push('/search/' + this.state.artistName)
 		}
 	},
 	render: function () {
