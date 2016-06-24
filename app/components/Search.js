@@ -4,7 +4,7 @@ var styles = require('../styles');
 
 function Search (props) {
 	return (
-		<div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={styles.transparentBg}>
+		<div className="jumbotron col-sm-12 text-center" style={styles.transparentBg}>
 			<h1>{props.header}</h1>
 			<div className="col-sm-12">
 				<form onSubmit={props.onSubmitArtist}>

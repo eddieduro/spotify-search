@@ -7,7 +7,7 @@ var styles = {
 	},
 	space: {
 		margin: '2em'
-	} 
+	},
 };
 
 module.exports = styles;
