@@ -5,7 +5,6 @@ var ArtistDetails = require('./ArtistDetails');
 
 
 function puke (object) {
-	console.log(object.artistInfo[0][0]);
 	return <pre>{JSON.stringify(object, null, ' ')}</pre>
 }
 
@@ -13,7 +12,6 @@ function Artist (props) {
 	return props.isLoading === true
 		? <p> LOADING! </p>
 		: <div> 
-			{puke(props)}
 			<ArtistDetails artistInfo={props} />
 			</div>
 

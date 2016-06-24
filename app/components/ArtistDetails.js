@@ -4,7 +4,6 @@ var Link = require('react-router').Link;
 var styles = require('../styles');
 
 function ArtistDetails (artist) {
-	console.log('HERE', artist.artistInfo.artistInfo[0][0].name)
 	return (
 		<div className="container-fluid">
 			<div className="row">
