@@ -16,3 +16,5 @@ var routes = (
     </Route>
   </Router>
 );
+
+module.exports = routes;
