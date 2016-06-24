@@ -15,10 +15,10 @@ var SearchContainer = React.createClass({
 			artistName: e.target.value
 		})
 	},
-	handleSubmiteArtist: function (e) {
+	handleSubmitArtist: function (e) {
 		e.preventDefault();
 		var artistName = this.state.artistName;
-		this.set({
+		this.setState({
 			artistName: ''
 		});
 
@@ -30,5 +30,16 @@ var SearchContainer = React.createClass({
 				}
 			})
 		}
+	},
+	render: function () {
+		return (
+			<Search
+				onSubmitArtist={this.handleSubmitArtist}
+				onUpdateArtist={this.handleUpdateArtist}
+				header={this.props.route.header}
+				artistName={this.state.artistName}/>
+		)
 	}
 })
+
+module.exports = SearchContainer;

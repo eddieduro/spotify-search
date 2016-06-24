@@ -3,7 +3,7 @@ var PropTypes = React.PropTypes;
 
 function Search (props) {
 	return (
-		<div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={transparentBg}>
+		<div className="jumbotron col-sm-6 col-sm-offset-3 text-center">
 			<h1>{props.header}</h1>
 			<div className="col-sm-12">
 				<form onSubmit={props.onSubmitArtist}>
@@ -28,7 +28,7 @@ function Search (props) {
 	)
 }
 
-Prompt.propTypes = {
+Search.propTypes = {
 	onUpdateArtist: PropTypes.func.isRequired,
 	onSubmitArtist: PropTypes.func.isRequired,
 	header: PropTypes.string.isRequired,
