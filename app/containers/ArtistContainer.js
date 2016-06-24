@@ -14,12 +14,11 @@ var ArtistContainer = React.createClass({
 	},
 	componentDidMount: function () {
 		var query = this.props.params;
-		console.log(query);
+
 		spotifyHelper.getArtistInfo([query.artist]).then(function (artists) {
-			console.log(artists)
 				this.setState({
 					isLoading: false,
-					artistInfo: [artists]
+					artistInfo: [artists[0]]
 				})
 		}.bind(this))
 	},

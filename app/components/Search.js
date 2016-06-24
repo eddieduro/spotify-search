@@ -1,9 +1,10 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
+var styles = require('../styles');
 
 function Search (props) {
 	return (
-		<div className="jumbotron col-sm-6 col-sm-offset-3 text-center">
+		<div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={styles.transparentBg}>
 			<h1>{props.header}</h1>
 			<div className="col-sm-12">
 				<form onSubmit={props.onSubmitArtist}>
