@@ -3,6 +3,10 @@ var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 require('../main.css');
 
 var Main = React.createClass({
+	componentWillMount: function() {
+  this.firebaseRef = new Firebase("https://spotify-finder.firebaseio.com/");
+  },
+
 	render: function () {
 		return (
 			<div className='main-container'> 
