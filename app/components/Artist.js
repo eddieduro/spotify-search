@@ -10,7 +10,11 @@ function puke (object) {
 function Artist (props) {
 	return props.isLoading === true
 		? <p> LOADING! </p>
-		: <p> DONE! </p>
+		: <div> 
+			{puke(props)}
+			
+			</div>
+
 }
 
 Artist.propTypes = {
