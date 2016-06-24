@@ -1,5 +1,5 @@
 var React = require('react');
-var Prompt = require('../components/Search');
+var Search = require('../components/Search');
 
 var SearchContainer = React.createClass({
 	contextTypes: {
